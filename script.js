@@ -5,7 +5,7 @@ let getFact = document.querySelector("button");
 
 /*Fetching From API*/
 function fetchData() {
-    fetch("http://numbersapi.com/" + number)
+    fetch("https://numbersapi.com/" + number)
       .then((response) => response.text())
         .then((data) => {
           data ===""?numberFact.innerHTML="Invalid input":
