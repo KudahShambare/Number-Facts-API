@@ -9,7 +9,7 @@ let count = 5;
 let loading = "Loading in " + count + " seconds";
 /*Fetching From API*/
 
-fetch("http://numbersapi.com/" + number,{cache: "no-store"})
+fetch("http://numbersapi.com/" + number)
   .then((response) => response.text())
   .then((data) => {
     data === ""
